@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>百度API控件</title>
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/style.css" />
+    <style>
+        body{padding:50px}
+    </style>
+    <script>var ctx = '';</script>
+    <script src="../../bower_components/requirejs/require.js" data-main="../../static/app.js" data-bootstrap-modules="'business/demo/demo_module'"></script>
+</head>
+<body  ng-controller="DemoController">
+    <h3>百度API控件</h3>
+
+    <input type="text" place-suggestion selected-row="currentAddr" on-row-click="rowClick" id="currentAddr1"/><br><br>
+
+    地址：<input type="text" value="{{currentAddr.address}}" id="address1"/><br><br>
+    经度：<input type="text" value="{{currentAddr.lat}}" /><br><br>
+    维度：<input type="text" value="{{currentAddr.lng}}" /><br><br>
+    省份：<input type="text" value="{{currentAddr.province}}" /><br><br>
+    城市：<input type="text" value="{{currentAddr.city}}" /><br><br>
+    区域：<input type="text" value="{{currentAddr.district}}" /><br><br>
+
+
+
+    <input type="text" place-suggestion selected-row="currentAddr1" show-detail-address="true" id="currentAddr2" /><br><br>
+
+    地址：<input type="text" value="{{currentAddr1.address}}" id="address2"/><br><br>
+    经度：<input type="text" value="{{currentAddr1.lat}}" /><br><br>
+    维度：<input type="text" value="{{currentAddr1.lng}}" /><br><br>
+    省份：<input type="text" value="{{currentAddr1.province}}" /><br><br>
+    城市：<input type="text" value="{{currentAddr1.city}}" /><br><br>
+    区域：<input type="text" value="{{currentAddr1.district}}" /><br><br>
+
+    <input type="button" ng-click="goNext()" value="下一步"/>
+</body>
+</html>

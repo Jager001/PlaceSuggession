@@ -1,0 +1,36 @@
+.suggestion-wrapper{
+    cursor: default;
+    color: #666 !important;
+    border: 1px solid rgb(105, 150, 212);
+    background-color: #ffffff;
+    box-shadow: none;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 9999;
+}
+.suggestion-wrapper ul {
+    margin: 0px;
+    padding: 0px;
+}
+.suggestion-wrapper li {
+    margin: 0px;
+    padding: 0px;
+    padding: 4px 8px;
+}
+.suggestion-wrapper ul li{
+    list-style-type:none;
+    border-bottom:1px solid gray;
+}
+.suggestion-wrapper ul li .i{
+    font-weight: bold;
+}
+.suggestion-wrapper ul li .ii{
+}
+
+.suggestion-wrapper ul li:hover {
+    background-color: whitesmoke;
+}
+.suggestion-wrapper ul li.hover {
+    background-color: whitesmoke;
+}
